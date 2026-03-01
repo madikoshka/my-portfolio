@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.hero-info {
+    flex: 1;
+}
+
+.hero-info h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.name-highlight {
+    color: #ee8718;
+    transition: 0.3s;
+}
+
+.name-highlight:hover {
+    color: #ffbe0b;
+}
+
+.btn-main {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ee8718;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    transform: scale(1.05);
+    background-color: #d67615;
+}
+
+.hero-visual {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-visual img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.skills {
+    padding: 60px 80px;
+    background-color: #f4f4f4;/
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.skills-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.icon {
+    display: inline-block;
+    transition: 0.3s;
+    transform-origin: bottom center;
+}
+
+.skills-card:hover .icon {
+    animation: wiggle 0.5s ease-in-out infinite;
+}
+
+.skills-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(238, 135, 24, 0.2);
+    border-color: #ee8718;
+}
+
+.main-footer {
+    background: linear-gradient(to bottom, #554c43, #222);
+
+    color: white;
+    padding: 60px 0;
+    margin-top: 80px;
+    text-align: center;
+    border-top: 5px solid #ffbe0b;
+}
+
+.footer-content p {
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-item {
+    color: #ee8718;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-item:hover {
+    color: white;
+    transform: translateY(-3px);
+}   
