@@ -148,3 +148,30 @@ body {
     transform: scale(1.2);
 
 }   
+
+@media (max-width: 768px) {
+    
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
